@@ -15,7 +15,7 @@ public class UUIDUtil {
      * @return UUID
      */
     public static synchronized String generate() {
-        long localId = System.currentTimeMillis()*100000;
+        long localId = System.currentTimeMillis()*10000;
 
         while (localId <= lastLocalId) {
             localId++;
